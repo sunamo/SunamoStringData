@@ -3,11 +3,11 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>24.1.9.1</Version>
-	  <Description>Data for deriving in very SunamoString package</Description>
+    <Version>24.1.11.1</Version>
+    <Description>Data for deriving in every SunamoString package</Description>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="SunamoData" Version="24.1.5.5" />
-    <PackageReference Include="SunamoExceptions" Version="24.1.5.1" />
+    <PackageReference Include="SunamoData" Version="24.1.12.2" />
+    <PackageReference Include="SunamoExceptions" Version="24.1.11.1" />
   </ItemGroup>
 </Project>
