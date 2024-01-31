@@ -2,26 +2,27 @@ namespace SunamoStringData;
 
 /// <summary>
 /// Zde musí být vše veřejné protože se to používá i v jiných třídách než je ve SH
+/// A taky protože někdy od SHData dědit nemůžu ale hodilo by se např. od SHSH
 /// </summary>
 public class SHData : SHSE
 {
-    protected static bool s_cs = false;
+    public static bool s_cs = false;
 
-    protected const string postfixSpaceCommaNewline = " (Space, comma, newline delimited)";
-    protected static List<string> spaceCommaNewline = new List<string>([AllStringsSE.space, AllStringsSE.comma, Environment.NewLine]);
+    public const string postfixSpaceCommaNewline = " (Space, comma, newline delimited)";
+    public static List<string> spaceCommaNewline = new List<string>([AllStringsSE.space, AllStringsSE.comma, Environment.NewLine]);
 
     /// <summary>
     /// Used 
     /// </summary>
     public const string diacritic = "\u00E1\u010D\u010F\u00E9\u011B\u00ED\u0148\u00F3\u0161\u0165\u00FA\u016F\u00FD\u0159\u017E\u00C1\u010C\u010E\u00C9\u011A\u00CD\u0147\u00D3\u0160\u0164\u00DA\u016E\u00DD\u0158\u017D";
 
-    protected static List<string> charsForSplitPunctuationCharsAndWhiteSpacesWithoutComma = null;
-    protected static List<string> charsForSplitPunctuationCharsAndWhiteSpacesWithComma = null;
+    public static List<string> charsForSplitPunctuationCharsAndWhiteSpacesWithoutComma = null;
+    public static List<string> charsForSplitPunctuationCharsAndWhiteSpacesWithComma = null;
 
     //private static bool s_initDiactitic = false;
 
     static bool _result = false;
-    protected static bool Result
+    public static bool Result
     {
         get
         {
@@ -36,13 +37,13 @@ public class SHData : SHSE
     /// <summary>
     /// Dont contains
     /// </summary>
-    protected static char[] spaceAndPuntactionChars = new char[] { AllChars.space, AllChars.dash, AllChars.dot, AllChars.comma, AllChars.sc, AllChars.colon, AllChars.excl, AllChars.q, '\u2013', '\u2014', '\u2010', '\u2026', '\u201E', '\u201C', '\u201A', '\u2018', '\u00BB', '\u00AB', '\u2019', AllChars.bs, AllChars.lb, AllChars.rb, AllChars.rsqb, AllChars.lsqb, AllChars.lcub, AllChars.rcub, '\u3008', '\u3009', AllChars.lt, AllChars.gt, AllChars.slash, AllChars.bs, AllChars.verbar, '\u201D', AllChars.qm, '~', '\u00B0', AllChars.plus, '@', '#', '$', AllChars.percnt, '^', '&', AllChars.asterisk, '=', AllChars.lowbar, '\u02C7', '\u00A8', '\u00A4', '\u00F7', '\u00D7', '\u02DD' };
+    public static char[] spaceAndPuntactionChars = new char[] { AllChars.space, AllChars.dash, AllChars.dot, AllChars.comma, AllChars.sc, AllChars.colon, AllChars.excl, AllChars.q, '\u2013', '\u2014', '\u2010', '\u2026', '\u201E', '\u201C', '\u201A', '\u2018', '\u00BB', '\u00AB', '\u2019', AllChars.bs, AllChars.lb, AllChars.rb, AllChars.rsqb, AllChars.lsqb, AllChars.lcub, AllChars.rcub, '\u3008', '\u3009', AllChars.lt, AllChars.gt, AllChars.slash, AllChars.bs, AllChars.verbar, '\u201D', AllChars.qm, '~', '\u00B0', AllChars.plus, '@', '#', '$', AllChars.percnt, '^', '&', AllChars.asterisk, '=', AllChars.lowbar, '\u02C7', '\u00A8', '\u00A4', '\u00F7', '\u00D7', '\u02DD' };
 
-    protected static char[] s_spaceAndPuntactionCharsAndWhiteSpaces = null;
+    public static char[] s_spaceAndPuntactionCharsAndWhiteSpaces = null;
 
 
 
-    protected static void Init()
+    public static void Init()
     {
         //charsForSplitPunctuationCharsAndWhiteSpacesWithComma = ReturnCharsForSplitBySpaceAndPunctuationCharsAndWhiteSpaces(true);
         //charsForSplitPunctuationCharsAndWhiteSpacesWithoutComma = ReturnCharsForSplitBySpaceAndPunctuationCharsAndWhiteSpaces(false);
@@ -77,7 +78,7 @@ public class SHData : SHSE
 
 
 
-    protected static List<string> ReturnCharsForSplitBySpaceAndPunctuationCharsAndWhiteSpaces(bool commaInclude)
+    public static List<string> ReturnCharsForSplitBySpaceAndPunctuationCharsAndWhiteSpaces(bool commaInclude)
     {
         if (charsForSplitPunctuationCharsAndWhiteSpacesWithoutComma == null)
         {
