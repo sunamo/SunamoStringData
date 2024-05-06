@@ -9,7 +9,7 @@ public class SHData : SHSE
     public static bool s_cs = false;
 
     public const string postfixSpaceCommaNewline = " (Space, comma, newline delimited)";
-    public static List<string> spaceCommaNewline = new List<string>([AllStringsSE.space, AllStringsSE.comma, Environment.NewLine]);
+    public static List<string> spaceCommaNewline = new List<string>([AllStrings.space, AllStrings.comma, Environment.NewLine]);
 
     /// <summary>
     /// Used 
@@ -90,7 +90,7 @@ public class SHData : SHSE
             if (charsForSplitPunctuationCharsAndWhiteSpacesWithComma == null)
             {
                 var result = charsForSplitPunctuationCharsAndWhiteSpacesWithoutComma.ToList();
-                result.Add(AllStringsSE.comma);
+                result.Add(AllStrings.comma);
                 charsForSplitPunctuationCharsAndWhiteSpacesWithComma = result;
             }
 
