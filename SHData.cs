@@ -1,4 +1,10 @@
-namespace SunamoStringData;
+namespace
+#if SunamoDevCode
+SunamoDevCode
+#else
+SunamoStringData
+#endif
+;
 
 /// <summary>
 /// Zde musí být vše veřejné protože se to používá i v jiných třídách než je ve SH
