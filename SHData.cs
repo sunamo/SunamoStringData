@@ -11,6 +11,10 @@ SunamoStringData
 SunamoStringSplit
 #elif SunamoStringReplace
 SunamoStringReplace
+#elif SunamoShared
+SunamoShared
+#elif SunamoStringShared
+SunamoStringShared
 #else
 SunamoStringData
 #endif
