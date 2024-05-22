@@ -6,7 +6,7 @@ namespace SunamoStringData;
 /// AnySpaces -
 /// ExactlyName - Is exactly the same
 /// </summary>
-public enum SearchStrategy
+internal enum SearchStrategy
 {
     /// <summary>
     /// Contains
