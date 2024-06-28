@@ -1,3 +1,5 @@
+
+namespace SunamoStringData;
 public class TranslateAble
 {
     
