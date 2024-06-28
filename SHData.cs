@@ -1,24 +1,3 @@
-namespace
-#if SunamoDevCode
-SunamoDevCode
-#elif SunamoString
-SunamoString
-#elif SunamoStringTrim
-SunamoStringTrim
-#elif SunamoStringData
-SunamoStringData
-#elif SunamoStringSplit
-SunamoStringSplit
-#elif SunamoStringReplace
-SunamoStringReplace
-#elif SunamoShared
-SunamoShared
-#elif SunamoStringShared
-SunamoStringShared
-#else
-SunamoStringData
-#endif
-;
 /// <summary>
 /// Zde musí být vše veřejné protože se to používá i v jiných třídách než je ve SH
 /// A taky protože někdy od SHData dědit nemůžu ale hodilo by se např. od SHSH
