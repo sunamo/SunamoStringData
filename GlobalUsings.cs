@@ -17,3 +17,6 @@ global using SunamoStringData._sunamo.SunamoEnums.Enums;
 global using SunamoStringData._sunamo.SunamoExceptions.OnlyInSE;
 global using SunamoStringData._sunamo.SunamoExceptions._AddedToAllCsproj;
 global using SunamoStringData._sunamo.SunamoValues.Constants;
+global using System.Diagnostics;
+global using System.Net;
+global using System.Threading.Tasks;
