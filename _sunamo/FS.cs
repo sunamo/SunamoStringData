@@ -1,4 +1,4 @@
-//namespace SunamoStringData._sunamo.SunamoExceptions._AddedToAllCsproj;
+namespace SunamoStringData._sunamo;
 
 //namespace SunamoStringData._sunamo.SunamoExceptions._AddedToAllCsproj;
 internal class FS
