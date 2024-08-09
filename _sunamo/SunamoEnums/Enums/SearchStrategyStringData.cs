@@ -1,23 +1,24 @@
 namespace SunamoStringData._sunamo.SunamoEnums.Enums;
 
-
 /// <summary>
-/// FixedSpace - Contains
-/// AnySpaces -
-/// ExactlyName - Is exactly the same
+///     FixedSpace - Contains
+///     AnySpaces -
+///     ExactlyName - Is exactly the same
 /// </summary>
 internal enum SearchStrategyStringData
 {
     /// <summary>
-    /// Contains
+    ///     Contains
     /// </summary>
     FixedSpace,
+
     /// <summary>
-    /// split input by spaces and A1 must contains all parts
+    ///     split input by spaces and A1 must contains all parts
     /// </summary>
     AnySpaces,
+
     /// <summary>
-    /// Is exactly the same
+    ///     Is exactly the same
     /// </summary>
     ExactlyName
 }
