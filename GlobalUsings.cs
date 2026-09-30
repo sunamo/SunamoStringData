@@ -1,0 +1,17 @@
+global using System.Collections.Generic;
+global using System;
+global using System.Linq;
+global using System.Data;
+global using System.Collections;
+global using System.IO;
+global using SunamoStringData._sunamo.SunamoValues;
+global using SunamoStringData._sunamo.SunamoExceptions;
+global using System.Diagnostics;
+global using System.Text;
+global using System.Diagnostics.CodeAnalysis;
+global using System.Reflection;
+global using System.Net;
+global using SunamoStringData;
+global using SunamoStringData._sunamo;
+global using SunamoStringData._sunamo.SunamoStringGetLines;
+global using SunamoStringData._sunamo.SunamoValues.Constants;
