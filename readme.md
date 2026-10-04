@@ -1,3 +1,7 @@
+## Short description
+
+Balíček s pomocnými funkcemi pro práci s řetězci a daty včetně strategií vyhledávání a porovnávání. Obsahuje vlastní kopie pomocných tříd.
+
 ### SunamoStringData
 
 Part of PlatformIndependentNuGetPackages:
